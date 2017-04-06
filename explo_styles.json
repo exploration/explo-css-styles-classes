@@ -1,0 +1,35 @@
+{
+  "classes": {
+    "btn": "dib pv2 ph5 ba bw0 br1 x-bg-orange x-hover-bg-darkorange lh-copy tc f6 wite pointer",
+    "btn-gray": "dib pv2 ph5 ba br1 x-b--coolgray bg-white x-hover-bg-palegray lh-copy tc f6 x-gray pointer",
+    "btn-l": "dib pv2 ph5 ph6-ns ba bw0 br1 x-bg-orange x-hover-bg-darkorange lh-copy tc f5 white pointer",
+    "btn-l-gray": "dib pv2 ph5 ph6-ns ba br1 x-b--coolgray bg-white x-hover-bg-palegray lh-copy tc f5 x-gray pointer",
+    "btn-s": "dib pv1 ph4 ba bw0 br1 x-bg-orange x-hover-bg-darkorange lh-copy tc f6 white pointer",
+    "btn-s-gray": "dib pv1 ph4 ba br1 x-b--coolgray bg-white x-hover-bg-palegray lh-copy tc f6 x-gray pointer",
+    "body": "w-100 avenir f5 fw5 x-gray",
+    "fieldset": "mt3 pv3 ph0 bn",
+    "flash-alert": "pa3 ba bw0 br1 x-bg-palered x-red",
+    "flash-notice": "pa3 ba bw0 br1 x-bg-palegreen x-green",
+    "form": "w5 pa3 br1 bn x-bg-palegray pa3",
+    "form-wide": "w6 pa4 br1 bn x-bg-palegray pa3",
+    "h1": "mt5 mb1 f2 f1-ns fw9 x-museo",
+    "h2": "mt4 mb1 f3 f2-ns fw7 sans-serif x-orange",
+    "h3": "mt3 mb1 f4 f3-ns fw6 sans-serif",
+    "h4": "mt2 mb1 f5 f4-ns fw5 sans-serif",
+    "input-error-label": "mt1 pa2 br1 bn x-bg-palered f6 lh-copy x-red",
+    "input-text": "input-reset w-100 pa2 ba br1 x-b--coolgray x-focus-b-orange x-on lh-copy",
+    "input-text-narrow": "input-reset db w-100 w5-ns pa2 ba br1 x-b--coolgray x-focus-b-orange x-on lh-copy",
+    "label": "db mb1 f6 x-coolgray",
+    "lead": "measure-wide lh-copy f5 fw7",
+    "legend": "tc fw7",
+    "link": "link x-orange x-hover-darkorange pointer",
+    "p": "measure-wide lh-copy f5 fw5",
+    "p-s": "measure-wide lh-copy f6 fw4",
+    "select": "input-reset w-100 pa2 ba br1 x-b--coolgray x-focus-b-orange x-on lh-copy pointer",
+    "select-narrow": "input-reset w-100 w5-ns pa2 ba br1 x-b--coolgray x-focus-b-orange x-on lh-copy pointer",
+    "textarea": "input-reset w-100 h4 pa2 ba br1 x-b--coolgray x-focus-b-ora}ge x-on lh-copy"
+  },
+  "styles": {
+    "select": "appearance: none; background:transparent; background: url(http://cdn.lab.explo.org/images/input_select_arrow.svg) 96% / 15%}no-repeat #FFF;"
+  }
+}
