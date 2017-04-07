@@ -1,6 +1,6 @@
 {
   "classes": {
-    "btn": "dib pv2 ph5 ba bw0 br1 x-bg-orange x-hover-bg-darkorange lh-copy tc f6 wite pointer",
+    "btn": "dib pv2 ph5 ba bw0 br1 x-bg-orange x-hover-bg-darkorange lh-copy tc f6 white pointer",
     "btn-gray": "dib pv2 ph5 ba br1 x-b--coolgray bg-white x-hover-bg-palegray lh-copy tc f6 x-gray pointer",
     "btn-l": "dib pv2 ph5 ph6-ns ba bw0 br1 x-bg-orange x-hover-bg-darkorange lh-copy tc f5 white pointer",
     "btn-l-gray": "dib pv2 ph5 ph6-ns ba br1 x-b--coolgray bg-white x-hover-bg-palegray lh-copy tc f5 x-gray pointer",
