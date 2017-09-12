@@ -4,7 +4,7 @@
 # Author: Donald L. Merand
 # Description: Converts explo_styles.json into an Elm module for dealing with styles.
 # Usage:
-#   (first export the file eg. `explo_styles_to_elm.rb > lib/ExploStyles.elm`)
+#   (first export the file eg. `ruby explo_styles_to_elm.rb > lib/ExploStyles.elm`)
 #   Then, in your Elm files:
 #
 #   import ExploStyles exposing(xc, xs)
