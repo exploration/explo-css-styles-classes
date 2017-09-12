@@ -14,7 +14,7 @@ require 'json'
 
 data = JSON.parse(File.read('explo_styles.json'))
 
-puts "module ExploStyles exposing (xc, xs)"
+puts "module ExploStyles exposing (xc, xs, xr)"
 puts "import Dict exposing (fromList, get)"
 puts
 
@@ -33,15 +33,32 @@ puts
 outputLists data, "styles"
 
 puts """
+{-| Get the eXplo Class string matching the passed key. 
+
+    xc \"link\" == \"link x-orange x-hover-darkorange pointer\"
+-}
 xc : String -> String
 xc key =
     case Dict.get key classes of
         Just value -> value
         Nothing -> \"\"
 
+{-| Get the eXplo Style string matching the passed key.
+
+    xs \"opaque\" == \"opacity: .5;\"
+-}
 xs : String -> String
 xs key =
     case Dict.get key styles of
         Just value -> value
         Nothing -> \"\"
+
+{-| Replace any instance of 'from' with 'to' in a given 'str'. 
+
+    xr \"wat\" \"are\" \"wat are this \" == \"are are this\"
+-}
+xr : String -> String -> String -> String
+xr from to str =
+    String.split from str
+        |> String.join to
 """
