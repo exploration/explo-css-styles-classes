@@ -1,10 +1,13 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 # explo_styles_to_elm.rb
 # Author: Donald L. Merand
-# Description: Converts explo_styles.json into an Elm module for dealing with styles.
+# Description: Converts explo_styles.json into an Elm module for dealing with
+# styles.
 # Usage:
-#   (first export the file eg. `ruby explo_styles_to_elm.rb > lib/ExploStyles.elm`)
+#   first export the file eg:
+#     `ruby explo_styles_to_elm.rb > lib/ExploStyles.elm`
 #   Then, in your Elm files:
 #
 #   import ExploStyles exposing(xc, xs, xr)
@@ -15,30 +18,29 @@ require 'json'
 data = JSON.parse(File.read('explo_styles.json'))
 
 puts <<~HEAD
-module ExploStyles exposing (xc, xs, xr)
-import Dict exposing (fromList, get)
+  module ExploStyles exposing (xc, xs, xr)
+  import Dict exposing (fromList, get)
 
 HEAD
 
-def outputLists(data, type)
+def output_lists(data, type)
   puts "#{type}List = ["
   data[type].each_with_index do |datum, index|
-    index == 0 ? pre = "" : pre = ", "
+    pre = (index.zero? ? '' : ', ')
     puts %{    #{pre}("#{datum[0]}", "#{datum[1]}")}
   end
   puts <<~CONVERSION
         ]
     #{type} = Dict.fromList #{type}List
+
   CONVERSION
 end
 
-outputLists data, "classes"
-puts
-outputLists data, "styles"
+output_lists data, 'classes'
+output_lists data, 'styles'
 
 puts <<~FUNCTIONS
-
-  {-| Get the eXplo Class string matching the passed key. 
+  {-| Get the eXplo Class string matching the passed key.
 
       xc "link" == "link x-orange x-hover-darkorange pointer"
   -}
@@ -58,7 +60,7 @@ puts <<~FUNCTIONS
           Just value -> value
           Nothing -> ""
 
-  {-| Replace any instance of 'from' with 'to' in a given 'str'. 
+  {-| Replace any instance of 'from' with 'to' in a given 'str'.
 
       xr "wat" "are" "wat are this " == "are are this"
   -}
