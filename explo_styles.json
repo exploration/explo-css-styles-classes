@@ -26,8 +26,8 @@
     "link": "link x-orange x-hover-lightorange pointer",
     "p": "measure-wide lh-copy f5 fw5",
     "p-s": "measure-wide lh-copy f6 fw4",
-    "select": "input-reset w-100 pa2 ba br1 x-b--blue x-focus-b-orange x-on x-bg-palegray hover-bg-white lh-copy pointer",
-    "select-narrow": "input-reset w-100 w5-ns pa2 ba br1 x-b--blue x-focus-b-orange x-on x-bg-palegray hover-bg-white lh-copy pointer",
+    "select": "input-reset w-100 pa2 pr4 ba br1 x-b--blue x-focus-b-orange x-on x-bg-palegray hover-bg-white lh-copy pointer",
+    "select-narrow": "input-reset w-100 w5-ns pa2 pr4 ba br1 x-b--blue x-focus-b-orange x-on x-bg-palegray hover-bg-white lh-copy pointer",
     "textarea": "input-reset w-100 h4 pa2 ba br1 x-b--blue x-focus-b-orange x-on x-bg-palegray hover-bg-white lh-copy"
   },
   "styles": {
